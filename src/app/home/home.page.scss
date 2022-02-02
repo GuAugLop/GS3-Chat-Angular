@@ -1,11 +1,7 @@
 #container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 #container strong {
@@ -24,4 +20,61 @@
 
 #container a {
   text-decoration: none;
+}
+
+#container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container form input {
+  height: 40px;
+  width: 100%;
+}
+
+#container form button {
+  height: 40px;
+  width: 50px;
+
+  background: cornflowerblue;
+  color: #fff;
+}
+
+#container .chat {
+  width: 100%;
+  height: 100%;
+
+  overflow-y: scroll;
+
+  padding: 0 10px;
+}
+
+.messageContainer {
+  display: flex;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.myMessage {
+  justify-content: flex-end;
+}
+
+.myMessage .message p {
+  background: chocolate;
+  text-align: end;
+}
+
+.messageContainer div {
+  max-width: 55%;
+}
+
+.message p {
+  padding: 10px 20px;
+  background: cornflowerblue;
+  max-width: 100%;
+
+  border-radius: 8px;
+
+  color: #fff !important;
 }

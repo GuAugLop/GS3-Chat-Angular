@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ChatService } from '../services/chat.service';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  message = '';
+  constructor(public chatService: ChatService) {}
 
-  constructor() {}
-
+  sendMessage() {
+    this.chatService.sendMessage(this.message);
+    this.message = '';
+  }
 }

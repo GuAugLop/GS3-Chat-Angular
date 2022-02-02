@@ -1,6 +1,6 @@
 {
-	"appId": "io.ionic.starter",
-	"appName": "chatapp",
-	"webDir": "www",
-	"bundledWebRuntime": false
+  "appId": "io.gs3.chatapp",
+  "appName": "chatapp",
+  "webDir": "www",
+  "bundledWebRuntime": false
 }
